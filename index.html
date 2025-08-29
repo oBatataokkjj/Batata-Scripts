@@ -38,13 +38,7 @@
         }
 
         body {
-            /* Adicionei o fundo com a imagem do Gengar aqui */
             background-color: #121212;
-            background-image: url('gengar.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -56,6 +50,8 @@
             margin: 0;
             position: relative;
             overflow-x: hidden;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         body::before {
@@ -65,9 +61,37 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* Ajustei o overlay para ficar mais escuro e combinar com o Gengar */
-            background-color: rgba(0, 0, 0, 0.7); /* Sutilmente mais escuro para melhorar a leitura */
+            background-image:
+                linear-gradient(rgba(30, 30, 30, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30, 30, 30, 0.5) 1px, transparent 1px);
+            background-size: 20px 20px;
             z-index: -1;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 30vw;
+            height: 100vh;
+            background-image: url('gengar.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            opacity: 0.3;
+            z-index: -2;
+            pointer-events: none;
+            animation: fadeInGengar 1s ease-out;
+        }
+
+        @keyframes fadeInGengar {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.3;
+            }
         }
 
         img {
@@ -636,7 +660,7 @@
         /* Notificação de cópia */
         .copy-notification {
             background: linear-gradient(135deg, #252525, #101010);
-            border-left: 44px solid #d4a2d4;
+            border-left: 4px solid #d4a2d4;
         }
 
         .copy-notification .notification-icon {
