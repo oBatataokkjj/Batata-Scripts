@@ -38,7 +38,13 @@
         }
 
         body {
+            /* Adicionei o fundo com a imagem do Gengar aqui */
             background-color: #121212;
+            background-image: url('gengar.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -59,10 +65,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image:
-                linear-gradient(rgba(30, 30, 30, 0.5) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(30, 30, 30, 0.5) 1px, transparent 1px);
-            background-size: 20px 20px;
+            /* Ajustei o overlay para ficar mais escuro e combinar com o Gengar */
+            background-color: rgba(0, 0, 0, 0.7); /* Sutilmente mais escuro para melhorar a leitura */
             z-index: -1;
         }
 
@@ -632,7 +636,7 @@
         /* Notificação de cópia */
         .copy-notification {
             background: linear-gradient(135deg, #252525, #101010);
-            border-left: 4px solid #d4a2d4;
+            border-left: 44px solid #d4a2d4;
         }
 
         .copy-notification .notification-icon {
