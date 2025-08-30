@@ -1,8 +1,8 @@
-<a href="#"><img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=7851A9&text=Sala%20Do%20Futuro%20Plataformas%20Hacks&fontSize=40&fontAlignY=33&fontColor=FFFFFF"/></a>
+<a href="#"><img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=7851A9&text=Batata%20Plataformas%20Hacks&fontSize=40&fontAlignY=33&fontColor=FFFFFF"/></a>
 
 --- 
 
-<p align="center"><strong>Sala do Futuro Plataformas Hacks</strong></p>
+<p align="center"><strong>Batata Plataformas Hacks</strong></p>
 
 <p align="center">Neste repositório, você encontrará Scripts, Hacks e Websites que automatizam e facilitam tarefas das plataformas do Sala do Futuro, incluindo TarefasSP, Redação Paulista, SPeak, Khan Academy, Alura, Expansão Noturno, Matific, LeiaMe.</p>
 
